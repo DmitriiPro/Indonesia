@@ -229,6 +229,198 @@
       </div>
     </section>
 
+    <section class="tour">
+      <div class="container">
+        <div class="tour__wrapper">
+
+          <div class="tour__block-text">
+            <h2 class="tour__title">Тур 14 дней</h2>
+            <p class="tour__text-big">Думаем, показать тебе Индонезию лучше, чем рассказывать о ней.</p>
+            <p class="tour__text-small">Выбери удобные даты, укажи количество людей, 
+              и выбери дополнительные опции.</p>
+          </div>
+
+          <fieldset class="tour__container-calc">
+
+            <div class="tour__wrapper-calc"> <!--action="https://jsonplaceholder.typicode.com/posts"-->
+
+              <fieldset class="tour__date"> <!--первый блок дата-->
+                <h3 class="tour__date-title">Дата</h3>
+                <p class="tour__date-text">Выбери дату 
+                  путешествия</p>
+                <div class="tour__click"></div>
+                  <!-- скрываю позиционирую-->
+                  <!-- <div class="tour__free-date"> 
+                    <h3 class="tour__free-date-title">Свободные даты</h3>
+
+                    <div class="tour__free-wrap">
+                    <div class="tour__free-month">
+                      <select name="month" class="tour__select-month">
+                        <option class="tour__select-month-value" >Ноябрь 2021</option>
+                        <option class="tour__select-month-value">Декабрь 2021</option>
+                        <option class="tour__select-month-value" >Январь 2022</option>
+                        <option class="tour__select-month-value" >Февраль 2022</option>
+                        <option class="tour__select-month-value" > Март 2022</option>
+                        <option class="tour__select-month-value" >Апрель 2022</option>
+                        <option class="tour__select-month-value">Май 2022</option>
+                      </select>
+                    </div>
+
+                    <div class="tour__free-number">
+                      <select name="date-number" class="tour__select-num">
+                        <option class="tour__select-num-value" >4.02 - 18.02</option>
+                        <option class="tour__select-num-value" >7.02 - 21.02</option>
+                        <option class="tour__select-num-value" >12.02 - 26.02</option>
+                        <option class="tour__select-num-value" >20.02 - 6.03</option>
+                      </select>
+                    </div>
+                  </div>
+
+                    <button class="tour__date-btn">Готово</button>
+                  </div> -->
+                  <!--скрываю позиционирую -->
+
+              </fieldset> <!--первый блок дата-->
+
+              <fieldset class="tour__people"> <!--второй блок люди-->
+                <h3 class="tour__date-title">Люди</h3>
+                <p class="tour__date-text tour__people-text">Укажи количество 
+                  человек</p>
+                  <div class="tour__click-people"></div>
+                  <!--скрываю позиционирую-->
+                  <!-- <div class="tour__people-block"> 
+                    <select name="people"  class="tour__people-select">
+                      <option class="tour__people-num-value" value="">1</option>
+                      <option class="tour__people-num-value" value="">2</option>
+                      <option class="tour__people-num-value" value="">3</option>
+                      <option class="tour__people-num-value" value="">4</option>
+                      <option class="tour__people-num-value" value="">5</option>
+                      <option class="tour__people-num-value" value="">6</option>
+                    </select>
+                  </div>  -->
+                  <!--скрываю позиционирую-->
+              </fieldset> <!--второй блок люди-->
+
+              <fieldset class="tour__options"> <!--третий блок опции-->
+                <h3 class="tour__date-title">Опции</h3>
+                <p class="tour__date-text tour__options-text">Выбери нужные 
+                  опции</p>
+                <div class="tour__click-options"></div>
+
+                <!--скрываю позиционирую-->
+                <!-- <div class="tour__options-block"> 
+                  <h3 class="tour__options-title">Опции</h3>
+
+                  <ul class="tour__options-list">
+                    <li class="tour__options-item">
+                      <input class="tour__options-inp tour__options-inp-one" name="
+                      nanny" type="checkbox" id="l1">
+                      <label class="tour__options-l tour__options-l-one" for="l1">Няня</label>
+                    </li>
+                    <li class="tour__options-item">
+                      <input class="tour__options-inp tour__options-inp-two" name="menu" type="checkbox" id="l2">
+                      <label class="tour__options-l tour__options-l-two" for="l2">Персональное меню</label>
+                    </li>
+                    <li class="tour__options-item">
+                      <input class="tour__options-inp tour__options-inp-three" name="
+                      guide" type="checkbox" id="l3">
+                      <label class="tour__options-l tour__options-l-three" for="l3">Персональный гид</label>
+                    </li>
+                    <li class="tour__options-item">
+                      <input class="tour__options-inp tour__options-inp-four" name="tent" type="checkbox" id="l4">
+                      <label class="tour__options-l tour__options-l-four" for="l4">Улучшенная палатка</label>
+                    </li>
+                  </ul>
+                  <button class="tour__date-btn">Готово</button>
+                </div>  -->
+                <!--скрываю позиционирую-->
+              </fieldset><!--третий блок опции-->
+
+              <div class="tour__link-calc">
+                <a href="#" class="tour__link">Узнать цену</a>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+          <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+           <!-- скрываю позиционирую блок дата - начало-->
+           <div class="tour__free-date" > 
+            <h3 class="tour__free-date-title">Свободные даты</h3>
+
+            <div class="tour__free-wrap">
+            <div class="tour__free-month">
+              <select name="month" class="tour__select-month">
+                <option class="tour__select-month-value" >Ноябрь 2021</option>
+                <option class="tour__select-month-value">Декабрь 2021</option>
+                <option class="tour__select-month-value" >Январь 2022</option>
+                <option class="tour__select-month-value" >Февраль 2022</option>
+                <option class="tour__select-month-value" > Март 2022</option>
+                <option class="tour__select-month-value" >Апрель 2022</option>
+                <option class="tour__select-month-value">Май 2022</option>
+              </select>
+            </div>
+
+            <div class="tour__free-number">
+              <select name="date-number" class="tour__select-num">
+                <option class="tour__select-num-value" >4.02 - 18.02</option>
+                <option class="tour__select-num-value" >7.02 - 21.02</option>
+                <option class="tour__select-num-value" >12.02 - 26.02</option>
+                <option class="tour__select-num-value" >20.02 - 6.03</option>
+              </select>
+            </div>
+          </div>
+
+            <button class="tour__date-btn">Готово</button>
+          </div>
+          <!--скрываю позиционирую блок дата - конец-->
+
+           <!--скрываю позиционирую блок люди - начало -->
+           <div class="tour__people-block"> 
+            <select name="people"  class="tour__people-select">
+              <option class="tour__people-num-value" value="">1</option>
+              <option class="tour__people-num-value" value="">2</option>
+              <option class="tour__people-num-value" value="">3</option>
+              <option class="tour__people-num-value" value="">4</option>
+              <option class="tour__people-num-value" value="">5</option>
+              <option class="tour__people-num-value" value="">6</option>
+            </select>
+          </div> 
+          <!--скрываю позиционирую блок люди - конец-->
+
+            <!--скрываю позиционирую блок опции - начало-->
+            <div class="tour__options-block"> 
+              <h3 class="tour__options-title">Опции</h3>
+
+              <ul class="tour__options-list">
+                <li class="tour__options-item">
+                  <input class="tour__options-inp tour__options-inp-one" name="
+                  nanny" type="checkbox" id="l1">
+                  <label class="tour__options-l tour__options-l-one" for="l1">Няня</label>
+                </li>
+                <li class="tour__options-item">
+                  <input class="tour__options-inp tour__options-inp-two" name="menu" type="checkbox" id="l2">
+                  <label class="tour__options-l tour__options-l-two" for="l2">Персональное меню</label>
+                </li>
+                <li class="tour__options-item">
+                  <input class="tour__options-inp tour__options-inp-three" name="
+                  guide" type="checkbox" id="l3">
+                  <label class="tour__options-l tour__options-l-three" for="l3">Персональный гид</label>
+                </li>
+                <li class="tour__options-item">
+                  <input class="tour__options-inp tour__options-inp-four" name="tent" type="checkbox" id="l4">
+                  <label class="tour__options-l tour__options-l-four" for="l4">Улучшенная палатка</label>
+                </li>
+              </ul>
+              <button class="tour__date-btn">Готово</button>
+            </div> 
+            <!--скрываю позиционирую блок опции - конец-->
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
