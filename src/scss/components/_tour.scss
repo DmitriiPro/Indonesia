@@ -11,12 +11,33 @@
 	);
 	@extend %backgImg;
 	background-position: top;
+
+	@media(max-width: 1130px) {
+		padding-top: 80px;
+	}
+	@media(max-width: 980px) {
+		padding-top: 0px;
+	}
 	&__wrapper {
 		position: relative;
+		@media(max-width: 980px) {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 	&__block-text {
 		max-width: 580px;
 		margin-bottom: 80px;
+		@media(max-width: 1130px) {
+			margin-bottom: 83px;
+			padding-left: 12px;
+		}
+		@media(max-width: 980px) {
+			margin-bottom: 0;
+			max-width: 350px;
+			padding-top: 40px;
+			padding-left: 27px;
+		}
 	}
 	&__title {
 		// font-family: 'Nunito';
@@ -25,6 +46,13 @@
 		line-height: 150%;
 		color: $white;
 		margin-bottom: 60px;
+		@media(max-width: 1130px) {
+			margin-bottom: 40px;
+		}
+		@media(max-width: 980px) {
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
 	}
 	&__text-big {
 		font-family: 'Merriweather';
@@ -35,6 +63,16 @@
 		color: $white;
 		max-width: 580px;
 		margin-bottom: 80px;
+		@media(max-width: 1130px) {
+			font-size: 30px;
+			max-width: 540px;
+			margin-bottom: 60px;
+		}
+		@media(max-width: 980px) {
+			font-size: 20px;
+			margin-bottom: 40px;
+			max-width: 270px;
+		}
 	}
 	&__text-small {
 		font-weight: 300;
@@ -42,6 +80,10 @@
 		line-height: 150%;
 		color: $white;
 		max-width: 420px;
+		@media(max-width: 980px) {
+			font-size: 14px;
+			max-width: 340px;
+		}
 	}
 	&__container-calc {
 		background: rgba(230, 205, 173, 0.3);
@@ -49,6 +91,15 @@
 		border-radius: 30px 30px 0px 0px;
 		padding: 68px 60px;
 		// border: transparent;
+		@media(max-width: 1130px) {
+			padding: 50px 60px;
+			border-radius: 20px 20px 0px 0px;
+		}
+		@media(max-width: 980px) {
+			padding: 30px;
+			border-radius: 12px 12px 0px 0px;
+			margin-right: 19px;
+		}
 	}
 	&__wrapper-calc {
 		background: rgba(33, 25, 25, 0.78);
@@ -58,11 +109,26 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media(max-width: 1130px) {
+			padding: 23px 20px 20px 20px;
+			border-radius: 16px;
+		}
+		@media(max-width: 980px) {
+			flex-direction: column;
+			padding: 20px 17px 22px 37px;
+			gap: 37px;
+			border-radius: 10px;
+			max-width: 300px;
+		}
 	}
 	
 	// дата
 	&__date {
 		width: 217px;
+		position: relative;
+		@media(max-width: 1130px) {
+			width: 186px;
+		}
 	}
 	&__free-date {
 		width: 282px;
@@ -74,6 +140,12 @@
 		color: $white;
 		padding-top: 12px;
 		margin-bottom: 12px;
+		@media(max-width: 980px) {
+			font-size: 14px;
+			margin-bottom: 15px;
+			padding-top: 9px;
+			padding-left: 13px;
+		}
 	}
 	&__free-wrap {
 		display: flex;
@@ -87,18 +159,65 @@
 		color: $white;
 		opacity: 0.7;
 		max-width: 100px;
+		@media(max-width: 980px) {
+			font-size: 14px;
+			max-width: 140px;
+			padding-left: 13px;
+		}
 	}
 	&__click {
-		position: relative;
+		// position: relative;
+
+		position: absolute;
+		bottom: 34px;
+		right: 21px;
+		// background-color: $white;
+		// width: 20px;
+		// height: 20px;
+		border-radius: 50%;
+
 		cursor: pointer;
-		// display: block;
+		display: block;
 		// width: 22px;
 		// height: 22px;
+		transition: all 0.250s ease;
+		outline: 0;
+		@media(max-width: 980px) {
+			bottom: 40px;
+    		right: 10px;
+		}
 		&:hover {
-			// background-color: $white;
-
+			width: 22px;
+			height: 22px;
+			background-color: $white;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
 		}
 
+		&:focus {
+			// background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+		}
+
+		&:active {
+			background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+			.tour__date-title {
+				color: $orange;
+			}
+			.tour__date-text {
+				color: $orange;
+			}
+		}
+		
 		&:after {
 			content: '';
 			border-bottom: 2px solid $white;
@@ -108,10 +227,17 @@
 			display: block;
 			transform: rotate(45deg);
 			position: absolute;
-			right: 27px;
-			bottom: 42px;
+			right: 7px;
+			bottom: 8px;
+			// transition: all 0.250s ease;
 			// &:hover {
-			// 	background-color: $orange;
+			// 	border-bottom: 2px solid $orange;
+			// 	border-right: 2px solid $orange;
+			// }
+			// &:focus {
+			// 	// background-color: none;
+			// 	border-bottom: 2px solid $orange;
+			// 	border-right: 2px solid $orange;
 			// }
 		}
 		
@@ -125,6 +251,11 @@
 		position: absolute;
 		bottom: 175px;
 		left: 60px;
+
+		@media(max-width: 1130px) {
+			bottom: 175px;
+			left: 0;
+		}
 	}
 	&__free-date-title {
 		font-weight: 700;
@@ -140,6 +271,7 @@
 		font-size: 14px;
 		line-height: 130%;
 		color: $grey;
+		// outline: 1px solid $focus;
 	}
 	&__select-month-value {
 		font-weight: 700;
@@ -151,11 +283,17 @@
 		}
 	}
 	&__select-num {
-		width: 88px;
+		width: 99px;
 		border: transparent;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 130%;
+		// outline: 1px solid $focus;
+		// &:hover {
+		// 	// color: $orange;
+		// 	// background: $white;
+		// 	// font-size: 18px;
+		// }
 	}
 	&__select-num-value {
 		font-weight: 700;
@@ -164,6 +302,10 @@
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
+		// &:active {
+		// 	color: $orange;
+		// background: $white;
+		// }
 	}
 	&__date-btn {
 		font-weight: 700;
@@ -183,9 +325,16 @@
 	// блок люди
 	&__people {
 		width: 217px;
+		position: relative;
+		@media(max-width: 1130px) {
+			width: 186px;
+		}
 	}
 	&__people-text {
 		max-width: 140px;
+		@media(max-width: 980px) {
+			max-width: 137px;
+		}
 	}
 	&__people-block {  // скрываю
 		display: none;
@@ -195,11 +344,57 @@
 		position: absolute;
 		bottom: 175px;
 		left: 481px;
-		
+		@media(max-width: 1130px) {
+			bottom: 175px;
+			left: 341px;
+		}
 	}
 	&__click-people {
-		position: relative;
+		position: absolute;
+		bottom: 34px;
+		right: 21px;
+	
+		border-radius: 50%;
 		cursor: pointer;
+		display: block;
+		transition: all 0.250s ease;
+		outline: 0;
+		
+		@media(max-width: 980px) {
+			bottom: 39px;
+			right: 10px;
+		}
+		&:hover {
+			width: 22px;
+			height: 22px;
+			background-color: $white;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+		}
+
+		&:focus {
+			// background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+		}
+
+		&:active {
+			background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+			.tour__date-title {
+				color: $orange;
+			}
+			.tour__date-text {
+				color: $orange;
+			}
+		}
 
 		&:after {
 			content: '';
@@ -210,8 +405,8 @@
 			display: block;
 			transform: rotate(45deg);
 			position: absolute;
-			right: 27px;
-			bottom: 42px;
+			right: 7px;
+			bottom: 8px;
 		}
 	}
 	&__people-select {
@@ -231,9 +426,16 @@
 	// блок опции
 	&__options {
 		width: 217px;
+		position: relative;
+		@media(max-width: 1130px) {
+			width: 186px;
+		}
 	}
 	&__options-text {
 		max-width: 125px;
+		@media(max-width: 980px) {
+			max-width: 125px;
+		}
 	}
 	&__options-block { // скрываю
 		background-color: $white;
@@ -244,10 +446,59 @@
 		position: absolute;
 		bottom: 175px;
 		right: 353px;
+		@media(max-width: 1130px) {
+			bottom: 175px;
+			right: 251px;
+		}
 	}
 	&__click-options {
-		position: relative;
+		// position: relative;
+		position: absolute;
+		bottom: 34px;
+		right: 22px;
 		cursor: pointer;
+
+		border-radius: 50%;
+		cursor: pointer;
+		display: block;
+		transition: all 0.250s ease;
+		outline: 0;
+
+		@media(max-width: 980px) {
+			bottom: 38px;
+			right: 10px;
+		}
+		&:hover {
+			width: 22px;
+			height: 22px;
+			background-color: $white;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+		}
+
+		&:focus {
+			// background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+		}
+
+		&:active {
+			background-color: transparent;
+			&:after {
+				border-bottom: 2px solid $orange;
+				border-right: 2px solid $orange;
+			}
+			.tour__date-title {
+				color: $orange;
+			}
+			.tour__date-text {
+				color: $orange;
+			}
+		}
 
 		&:after {
 			content: '';
@@ -258,8 +509,8 @@
 			display: block;
 			transform: rotate(45deg);
 			position: absolute;
-			right: 27px;
-			bottom: 42px;
+			right: 7px;
+			bottom: 8px;
 		}
 	}
 	&__options-title {
@@ -275,6 +526,10 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 130%;
+		// &:active {
+		// 	border: 1px solid #FCB500;
+		// 	color: $orange;
+		// }
 	}
 	&__options-inp {
 		width: 16px;
@@ -283,10 +538,24 @@
 		border: 1px solid $black;
 		margin-right: 15px;
 		vertical-align: middle;
+		transition: all 0.250s ease;
+		// &:hover {
+		// 	border: 1px solid #FCB500;
+		// 	color: $orange;
+		// }
+		// &:active {
+		// 	border: 1px solid #FCB500;
+		// 	color: $orange;
+		// }
 	}
 
 
 	//////////////////////////
+	&__link-calc {
+		@media(max-width: 980px) {
+			margin-bottom: 9px;
+		}
+	}
 	&__link {
 		color: $white;
 		font-weight: 700;
@@ -298,6 +567,18 @@
 		height: 67px;
 		display: inline-block;
 		border-radius: 12px;
+		@media(max-width: 1130px) {
+			padding: 13px 41px 16px 41px;
+			width: 189px;
+			height: 52px;
+		}
+		@media(max-width: 980px) {
+			font-size: 14px;
+			padding: 12px 43px;
+			width: 170px;
+			height: 42px;
+			border-radius: 6px;
+		}
 	}
 }
 

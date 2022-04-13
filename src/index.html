@@ -248,7 +248,7 @@
                 <h3 class="tour__date-title">Дата</h3>
                 <p class="tour__date-text">Выбери дату 
                   путешествия</p>
-                <div class="tour__click"></div>
+                <div class="tour__click" tabindex="0"></div>
                   <!-- скрываю позиционирую-->
                   <!-- <div class="tour__free-date"> 
                     <h3 class="tour__free-date-title">Свободные даты</h3>
@@ -286,7 +286,7 @@
                 <h3 class="tour__date-title">Люди</h3>
                 <p class="tour__date-text tour__people-text">Укажи количество 
                   человек</p>
-                  <div class="tour__click-people"></div>
+                  <div class="tour__click-people" tabindex="0"></div>
                   <!--скрываю позиционирую-->
                   <!-- <div class="tour__people-block"> 
                     <select name="people"  class="tour__people-select">
@@ -305,7 +305,7 @@
                 <h3 class="tour__date-title">Опции</h3>
                 <p class="tour__date-text tour__options-text">Выбери нужные 
                   опции</p>
-                <div class="tour__click-options"></div>
+                <div class="tour__click-options" tabindex="0"></div>
 
                 <!--скрываю позиционирую-->
                 <!-- <div class="tour__options-block"> 
@@ -344,14 +344,14 @@
 
           </fieldset>
 
-          <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+          <!-- <form method="post" action="https://jsonplaceholder.typicode.com/posts"> -->
            <!-- скрываю позиционирую блок дата - начало-->
            <div class="tour__free-date" > 
             <h3 class="tour__free-date-title">Свободные даты</h3>
 
             <div class="tour__free-wrap">
             <div class="tour__free-month">
-              <select name="month" class="tour__select-month">
+              <select name="month" class="tour__select-month" multiple>
                 <option class="tour__select-month-value" >Ноябрь 2021</option>
                 <option class="tour__select-month-value">Декабрь 2021</option>
                 <option class="tour__select-month-value" >Январь 2022</option>
@@ -363,7 +363,7 @@
             </div>
 
             <div class="tour__free-number">
-              <select name="date-number" class="tour__select-num">
+              <select name="date-number" class="tour__select-num" multiple>
                 <option class="tour__select-num-value" >4.02 - 18.02</option>
                 <option class="tour__select-num-value" >7.02 - 21.02</option>
                 <option class="tour__select-num-value" >12.02 - 26.02</option>
@@ -378,7 +378,7 @@
 
            <!--скрываю позиционирую блок люди - начало -->
            <div class="tour__people-block"> 
-            <select name="people"  class="tour__people-select">
+            <select name="people"  class="tour__people-select" multiple>
               <option class="tour__people-num-value" value="">1</option>
               <option class="tour__people-num-value" value="">2</option>
               <option class="tour__people-num-value" value="">3</option>
@@ -416,7 +416,7 @@
               <button class="tour__date-btn">Готово</button>
             </div> 
             <!--скрываю позиционирую блок опции - конец-->
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </section>

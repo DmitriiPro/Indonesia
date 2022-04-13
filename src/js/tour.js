@@ -19,3 +19,19 @@ tourClickOptions.addEventListener('click', () => {
 	tourOptionsBlock.classList.toggle('click-options');
 })
 
+
+///////////////////////////////////////////
+// const tourPeopleSelect = document.querySelector('.tour__people-select'); // сам селект
+// const tourPeopleText = document.querySelector('.tour__people-text'); // параграф с текстом
+// const tourPeopleNumValue = document.querySelectorAll('.tour__people-num-value'); // нашел все оптион
+
+// console.log(tourPeopleNumValue)
+
+
+// 	for(let elem of tourPeopleNumValue) {
+// 		elem.addEventListener('click', function() {
+// 			tourPeopleText.innerHTML +=  +elem.innerHTML;
+// 		})
+		
+// 	}
+//////////////////////////////////////////////////////
