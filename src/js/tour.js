@@ -35,3 +35,14 @@ tourClickOptions.addEventListener('click', () => {
 		
 // 	}
 //////////////////////////////////////////////////////
+
+const tourDateBtn = document.querySelector('.tour__date-btn'); // Нашел кнопку окна свободных дат при клике окно закрывается
+tourDateBtn.addEventListener('click', () => {
+	tourFreeDate.classList.toggle('dates-free'); // добавляю класс скрыть открыть 
+});
+
+const tourDateBtnClick = document.querySelector('.tour__date-btn-click'); // нашел кнопку из окна опции
+console.log(tourDateBtnClick)
+tourDateBtnClick.addEventListener('click', () => {
+	tourOptionsBlock.classList.toggle('click-options');
+});

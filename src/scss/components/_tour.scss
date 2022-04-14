@@ -18,11 +18,17 @@
 	@media(max-width: 980px) {
 		padding-top: 0px;
 	}
+	@media(max-width: 630px) {
+		padding-top: 20px;
+	}
 	&__wrapper {
 		position: relative;
 		@media(max-width: 980px) {
 			display: flex;
 			justify-content: space-between;
+		}
+		@media(max-width: 630px) {
+			flex-direction: column;
 		}
 	}
 	&__block-text {
@@ -38,6 +44,12 @@
 			padding-top: 40px;
 			padding-left: 27px;
 		}
+		@media(max-width: 630px) {
+			margin-bottom: 25px;
+			max-width: 600px;
+			padding-top: 0;
+			padding-left: 10px;
+		}
 	}
 	&__title {
 		// font-family: 'Nunito';
@@ -52,6 +64,10 @@
 		@media(max-width: 980px) {
 			font-size: 14px;
 			margin-bottom: 30px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+			margin-bottom: 15px;
 		}
 	}
 	&__text-big {
@@ -73,6 +89,11 @@
 			margin-bottom: 40px;
 			max-width: 270px;
 		}
+		@media(max-width: 630px) {
+			font-size: 16px;
+			margin-bottom: 25px;
+			max-width: 600px;
+		}
 	}
 	&__text-small {
 		font-weight: 300;
@@ -83,6 +104,10 @@
 		@media(max-width: 980px) {
 			font-size: 14px;
 			max-width: 340px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+			max-width: 600px;
 		}
 	}
 	&__container-calc {
@@ -99,6 +124,12 @@
 			padding: 30px;
 			border-radius: 12px 12px 0px 0px;
 			margin-right: 19px;
+		}
+		@media(max-width: 630px) {
+			margin-right: 0;
+			padding: 25px;
+			width: 250px;
+			margin: 0 auto;
 		}
 	}
 	&__wrapper-calc {
@@ -120,6 +151,9 @@
 			border-radius: 10px;
 			max-width: 300px;
 		}
+		@media(max-width: 630px) {
+			padding: 8px 25px 25px 25px;
+		}
 	}
 	
 	// дата
@@ -128,6 +162,9 @@
 		position: relative;
 		@media(max-width: 1130px) {
 			width: 186px;
+		}
+		@media(max-width: 630px) {
+			width: 150px;
 		}
 	}
 	&__free-date {
@@ -146,11 +183,20 @@
 			padding-top: 9px;
 			padding-left: 13px;
 		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+			padding-top: 11px;
+    		padding-left: 10px;
+			margin-bottom: 16px;
+		}
 	}
 	&__free-wrap {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 20px;
+		@media(max-width: 990px) {
+			margin-bottom: 14px;
+		}
 	}
 	&__date-text {
 		font-weight: 300;
@@ -163,6 +209,11 @@
 			font-size: 14px;
 			max-width: 140px;
 			padding-left: 13px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+			max-width: 90px;
+			padding-left: 10px;
 		}
 	}
 	&__click {
@@ -256,6 +307,19 @@
 			bottom: 175px;
 			left: 0;
 		}
+
+		@media(max-width: 990px) {
+			padding: 15px 10px;
+			bottom: 284px;
+			left: 198px;
+			width: 250px;
+		}
+		@media(max-width: 630px) {
+			padding: 10px;
+			bottom: 413px;
+			left: 33px;
+			width: 230px;
+		}
 	}
 	&__free-date-title {
 		font-weight: 700;
@@ -263,6 +327,14 @@
 		line-height: 130%;
 		margin-bottom: 20px;
 		text-align: center;
+		@media(max-width: 990px) {
+			margin-bottom: 14px;
+			font-size: 16px;
+		}
+		@media(max-width: 630px) {
+			margin-bottom: 10px;
+    		font-size: 12px;
+		}
 	}
 	&__select-month {
 		width: 113px;
@@ -272,6 +344,9 @@
 		line-height: 130%;
 		color: $grey;
 		// outline: 1px solid $focus;
+		@media(max-width: 630px) {
+			font-size: 12px;
+		}
 	}
 	&__select-month-value {
 		font-weight: 700;
@@ -280,6 +355,9 @@
 		color: $grey;
 		&:not(:last-child) {
 			margin-bottom: 11px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
 		}
 	}
 	&__select-num {
@@ -294,6 +372,9 @@
 		// 	// background: $white;
 		// 	// font-size: 18px;
 		// }
+		@media(max-width: 630px) {
+			font-size: 12px;
+		}
 	}
 	&__select-num-value {
 		font-weight: 700;
@@ -306,6 +387,9 @@
 		// 	color: $orange;
 		// background: $white;
 		// }
+		@media(max-width: 630px) {
+			font-size: 12px;
+		}
 	}
 	&__date-btn {
 		font-weight: 700;
@@ -320,6 +404,12 @@
 		height: 38px;
 		border-radius: 8px;
 		margin-left: auto;
+		@media(max-width: 630px) {
+			font-size: 12px;
+			padding: 8px 24px;
+			width: 100px;
+    		height: 36px;
+		}
 	} 
 
 	// блок люди
@@ -329,11 +419,17 @@
 		@media(max-width: 1130px) {
 			width: 186px;
 		}
+		@media(max-width: 630px) {
+			width: 150px;
+		}
 	}
 	&__people-text {
 		max-width: 140px;
 		@media(max-width: 980px) {
 			max-width: 137px;
+		}
+		@media(max-width: 630px) {
+			max-width: 120px;
 		}
 	}
 	&__people-block {  // скрываю
@@ -347,6 +443,15 @@
 		@media(max-width: 1130px) {
 			bottom: 175px;
 			left: 341px;
+		} 
+		@media(max-width: 990px) {
+			bottom: 253px;
+			// left: 554px;
+			left: 450px;
+		}
+		@media(max-width: 630px) {
+			bottom: 289px;
+    		left: 221px;
 		}
 	}
 	&__click-people {
@@ -430,11 +535,17 @@
 		@media(max-width: 1130px) {
 			width: 186px;
 		}
+		@media(max-width: 630px) {
+			width: 150px;
+		}
 	}
 	&__options-text {
 		max-width: 125px;
 		@media(max-width: 980px) {
 			max-width: 125px;
+		}
+		@media(max-width: 630px) {
+			max-width: 108px;
 		}
 	}
 	&__options-block { // скрываю
@@ -449,6 +560,18 @@
 		@media(max-width: 1130px) {
 			bottom: 175px;
 			right: 251px;
+		}
+		@media(max-width: 990px) {
+			width: 180px;
+			bottom: 7px;
+			right: 289px;
+			padding: 10px 15px;
+		}
+		@media(max-width: 630px) {
+			width: 165px;
+			bottom: 88px;
+			right: 118px;
+			padding: 10px;
 		}
 	}
 	&__click-options {
@@ -518,9 +641,19 @@
 		font-size: 18px;
 		line-height: 130%;
 		margin-bottom: 20px;
+		@media(max-width: 990px) {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+		}
 	}
 	&__options-item {
 		margin-bottom: 25px;
+		@media(max-width: 990px) {
+			margin-bottom: 10px;
+		}
 	}
 	&__options-l {
 		font-weight: 700;
@@ -530,6 +663,9 @@
 		// 	border: 1px solid #FCB500;
 		// 	color: $orange;
 		// }
+		@media(max-width: 990px) {
+			font-size: 12px;
+		}
 	}
 	&__options-inp {
 		width: 16px;
@@ -547,6 +683,14 @@
 		// 	border: 1px solid #FCB500;
 		// 	color: $orange;
 		// }
+		@media(max-width: 990px) {
+			margin-right: 5px;
+		}
+		@media(max-width: 630px) {
+			margin-right: 3px;
+			width: 12px;
+			height: 12px;
+		}
 	}
 
 
@@ -554,6 +698,10 @@
 	&__link-calc {
 		@media(max-width: 980px) {
 			margin-bottom: 9px;
+		}
+		@media(max-width: 630px) {
+			margin-bottom: 0;
+			padding-top: 2px;
 		}
 	}
 	&__link {
@@ -578,6 +726,13 @@
 			width: 170px;
 			height: 42px;
 			border-radius: 6px;
+		}
+		@media(max-width: 630px) {
+			font-size: 12px;
+			padding: 8px 30px;
+			width: 132px;
+			height: 34px;
+			
 		}
 	}
 }
