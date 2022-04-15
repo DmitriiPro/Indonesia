@@ -6,7 +6,8 @@ const swiper = new Swiper('.photo__swiper', {
 	loop: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
-  
+    centeredSlides: true,                
+            centeredSlidesBounds: true,
 	// If we need pagination
 	// pagination: {
 	//   el: '.swiper-pagination',
