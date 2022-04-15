@@ -547,47 +547,61 @@
       <div class="container">
         <div class="booking__wrapper">
 
-          <form action="" class="booking__form" method="post">
+          <form class="booking__form" method="post">
 
             <h2 class="booking__title">Бронирование тура</h2>
             
-            <fieldset class="booking__form-container"> <!--контейнер для fieldset-->
+            <fieldset class="booking__container-one"> <!--контейнер для дата люди опции-->
 
               <fieldset class="booking__version booking__date"> <!--дата-->
                 <button class="booking__button booking__date-btn"> 
-                  <span class="booking__date-span booking__date-span-one">Дата</span>
-                  <p class="booking__date-text booking__date-text-one">Выбери дату путешествия</p>
+                  <span class="booking__span booking__date-span">Дата</span>
+                  <span class="booking__text booking__date-text">Выбери дату путешествия</span>
                 </button>
               </fieldset> <!--дата-->
 
               <fieldset class="booking__version booking__people"> <!--люди-->
-                <button class="booking__button booking__date-btn"> 
-                  <span class="booking__date-span booking__date-span-one">Люди</span>
-                  <p class="booking__date-text booking__date-text-one">Укажи количество человек</p>
+                <button class="booking__button booking__people-btn"> 
+                  <span class="booking__span booking__peolpe-span">Люди</span>
+                  <span class="booking__text booking__peolpe-text">Укажи количество человек</span>
                 </button>
               </fieldset> <!--люди-->
 
               <fieldset class="booking__version booking__options"> <!--опции-->
-                <button class="booking__button booking__date-btn"> 
-                  <span class="booking__date-span booking__date-span-one">Опции</span>
-                  <p class="booking__date-text booking__date-text-one">Выбери нужные опции</p>
+                <button class="booking__button booking__options-btn"> 
+                  <span class="booking__span booking__options-span">Опции</span>
+                  <span class="booking__text booking__options-text">Выбери нужные опции</span>
                 </button>
               </fieldset> <!--опции-->
 
+            </fieldset> <!--контейнер для дата люди опции-->
+
               <fieldset class="booking__block-name"> <!--ФИО-->
-                <label class="booking__label booking__name-label" for="fio">ФИО</label>
-                <input class="booking__input booking__name-input" type="text" id="fio" name="name" placeholder="Введите ваше ФИО">
+                <div class="booking__name-wrap">
+                  <label class="booking__label booking__name-label" for="fio">ФИО</label>
+                  <input class="booking__input booking__name-input" type="text" id="fio" name="name" placeholder="Введите ваше ФИО">
+                </div>
               </fieldset> <!--ФИО-->
 
-              <fieldset class="booking__block-mail"> <!--почта-->
-                <label class="booking__label booking__mail-label" for="conv">Email</label>
-                <input type="email" class="booking__input booking__mail-input" id="conv" name="email" placeholder="Введите адрес электронной почты">
-              </fieldset> <!--почта-->
+              <fieldset class="booking__container-two"> <!--контейнер для почты и телефона-->
 
-              <fieldset class="booking__block-number"> <!--телефон-->
-                <label class="booking__label booking__phone-label" for="tel1">Телефон</label>
-                <input class="booking__input booking__phone-input" type="tel" id="tel1" name="phone" placeholder="Введите номер телефона">
-              </fieldset> <!--телефон-->
+                <fieldset class="booking__block-mn booking__block-mail"> <!--почта-->
+                  <div class="booking__mail-wrap">
+                    <label class="booking__label booking__mail-label" for="conv">Email</label>
+                    <input type="email" class="booking__input booking__mail-input" id="conv" name="email" placeholder="Введите адрес электронной почты">
+                  </div>
+                </fieldset> <!--почта-->
+
+                <fieldset class="booking__block-mn booking__block-number"> <!--телефон-->
+                  <div class="booking__number-wrap">
+                    <label class="booking__label booking__phone-label" for="tel1">Телефон</label>
+                    <input class="booking__input booking__phone-input" type="tel" id="tel1" name="phone" placeholder="Введите номер телефона">
+                  </div>
+                </fieldset> <!--телефон-->
+
+            </fieldset> <!--контейнер для почты и телефона-->
+
+            <div class="booking__container-three"> <!--контейнер для кнопки и выводы цены-->
 
               <div class="booking__block-price"> <!--цена-->
                 <p class="booking__price-month">24 ноября - 7 декабря, 4 человека</p>
@@ -598,7 +612,7 @@
                 <button class="booking__form-btn">Забронировать</button>
               </div> <!--кнопка-->
 
-            </fieldset> <!--контейнер для fieldset-->
+            </div> <!--контейнер для кнопки и выводы цены-->
 
           </form>
 
