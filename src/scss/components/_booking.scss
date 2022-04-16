@@ -16,6 +16,7 @@
 	}
 
 	&__form {
+		position: relative;
 		border: 1px solid $disabled;
 		border-radius: 30px;
 		padding: 60px 100px;
@@ -543,5 +544,137 @@
 			margin: 0 auto;
 		}
 	}
+	// карточка с датой и временем открывается
+	// &__form-active {
+	// 	display: block;
+	// }
 
+	&__form-list-month {
+		position: relative;
+		width: 127px;
+	}
+	&__form-list-month::after {
+		content: '';
+		border-right: 1px solid $grey;
+		height: 240px;
+		position: absolute;
+		top: 6px;
+		right: 0px;
+	}
+
+	&__form-date {
+		background-color: $white;
+		padding: 20px;
+		width: 282px;
+		position: absolute;
+		top: -112px;
+		left: 0;
+		z-index: 20;
+		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+		display: none;
+
+		&-title {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 130%;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		&-container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&-item:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		&-label {
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 130%;
+			color: $grey;
+			cursor: pointer;
+			transition: all 0.250s ease;
+			&:hover{
+				color: $orange;
+				font-size: 16px;
+			}
+			&:focus {
+				font-size: 16px;
+			}
+			&:active {
+				font-size: 16px;
+				color: $orange;
+			}
+		}
+
+		&-input {
+			appearance: none;
+		}
+
+		&-btn {
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 130%;
+			color: $white;
+			padding: 10px 30px;
+			background-color: $orange;
+			display: block;
+			width: 106px;
+			height: 38px;
+			border: none;
+			border-radius: 8px;
+			margin-left: auto;
+			margin-top: 10px;
+			transition: all 0.250s ease;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:focus {
+			background-color: $hover;
+			outline: 2px solid $focus;
+		}
+		&:active {
+			background-color: $active;
+		}
+		}
+	}
+
+	&__formdate-listnum {
+		align-self: center;
+	}
+
+	&__formdate-itemnum:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	&__formdate-label {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 130%;
+		cursor: pointer;
+		transition: all 0.250s ease;
+		&:hover{
+			// color: $orange;
+			font-size: 16px;
+		}
+		&:focus {
+			font-size: 16px;
+		}
+		&:active {
+			font-size: 16px;
+			color: $orange;
+		}
+	}
+
+	&__formdate-input {
+		appearance: none;
+	}
+}
+
+.form-active {
+	display: block;
 }

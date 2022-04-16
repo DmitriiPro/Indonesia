@@ -547,7 +547,7 @@
       <div class="container">
         <div class="booking__wrapper">
 
-          <form class="booking__form" method="post">
+          <form class="booking__form" method="post" action="https://jsonplaceholder.typicode.com/todos">
 
             <h2 class="booking__title">Бронирование тура</h2>
             
@@ -579,7 +579,7 @@
               <fieldset class="booking__block-name" tabindex="0"> <!--ФИО-->
                 <div class="booking__name-wrap">
                   <label class="booking__label booking__name-label" for="fio">ФИО</label>
-                  <input class="booking__input booking__name-input" type="text" id="fio" name="name" placeholder="Введите ваше ФИО">
+                  <input class="booking__input booking__name-input" type="text" id="fio" name="name" placeholder="Введите ваше ФИО" required>
                 </div>
               </fieldset> <!--ФИО-->
 
@@ -588,14 +588,14 @@
                 <fieldset class="booking__block-mn booking__block-mail" tabindex="0"> <!--почта-->
                   <div class="booking__mail-wrap">
                     <label class="booking__label booking__mail-label" for="conv">Email</label>
-                    <input type="email" class="booking__input booking__mail-input" id="conv" name="email" placeholder="Введите адрес электронной почты">
+                    <input type="email" class="booking__input booking__mail-input" id="conv" name="email" placeholder="Введите адрес электронной почты" required>
                   </div>
                 </fieldset> <!--почта-->
 
                 <fieldset class="booking__block-mn booking__block-number" tabindex="0"> <!--телефон-->
                   <div class="booking__number-wrap">
                     <label class="booking__label booking__phone-label" for="tel1">Телефон</label>
-                    <input class="booking__input booking__phone-input" type="tel" id="tel1" name="phone" placeholder="Введите номер телефона">
+                    <input class="booking__input booking__phone-input" type="tel" id="tel1" name="phone" placeholder="Введите номер телефона" required>
                   </div>
                 </fieldset> <!--телефон-->
 
@@ -609,10 +609,98 @@
               </div><!--цена-->
 
               <div class="booking__block-button"> <!--кнопка-->
-                <button class="booking__form-btn">Забронировать</button>
+                <button type="submit" class="booking__form-btn">Забронировать</button>
               </div> <!--кнопка-->
 
             </div> <!--контейнер для кнопки и выводы цены-->
+
+            <fieldset class="booking__form-date"> <!--карточка при открытии с датой и числом-->
+              <h3 class="booking__form-date-title">Свободные даты</h3>
+
+              <fieldset class="booking__form-date-container">
+
+                <ul class="booking__form-list-month">
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="november 2021">
+                      Ноябрь 2021
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="december 2021">
+                      Декабрь 2021
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="january 2022">
+                      Январь 2022
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="february 2022">
+                      Февраль 2022
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="march 2022">
+                      Март 2022
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="april 2022">
+                      Апрель 2022
+                    </label>
+                  </li>
+
+                  <li class="booking__form-date-item">
+                    <label class="booking__form-date-label"> 
+                      <input type="radio" name="month" class="booking__form-date-input"  value="may 2022">
+                      Май 2022
+                    </label>
+                  </li>
+                </ul>
+
+                <ul class="booking__formdate-listnum">
+                  <li class="booking__formdate-itemnum">
+                    <label class="booking__formdate-label">
+                      <input type="radio" name="number" class="booking__formdate-input" value=" 4.02 - 18.02">
+                      4.02 - 18.02
+                    </label>
+                  </li>
+                  <li class="booking__formdate-itemnum">
+                    <label class="booking__formdate-label">
+                      <input type="radio" name="number" class="booking__formdate-input" value="7.02 - 21.02">
+                      7.02 - 21.02
+                    </label>
+                  </li>
+                  <li class="booking__formdate-itemnum">
+                    <label class="booking__formdate-label">
+                      <input type="radio" name="number" class="booking__formdate-input" value="12.02 - 26.02">
+                      12.02 - 26.02
+                    </label>
+                  </li>
+                  <li class="booking__formdate-itemnum">
+                    <label class="booking__formdate-label">
+                      <input type="radio" name="number" class="booking__formdate-input" value="20.02 - 6.03">
+                      20.02 - 6.03
+                    </label>
+                  </li>
+                </ul>
+
+              </fieldset>
+              <button class="booking__form-date-btn">Готово</button>
+
+            </fieldset> <!--карточка при открытии с датой и числом-->
 
           </form>
 
