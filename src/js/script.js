@@ -7,16 +7,15 @@ const safari = () => {
 };
 safari(); // для фокуса в сафари
 
-// кнопки для блока booking
-const bookingDateBtn = document.querySelector('.booking__date-btn'); // нашел кнопку дата
-const bookingFormdate = document.querySelector('.booking__form-date'); // нашел сам блок с месяцем и датой позиционируем
-const bookingFormdateBtn = document.querySelector('.booking__form-date-btn'); // нашел саму кнопку что в форме с датой и месяц
-console.log(bookingFormdateBtn)
-bookingDateBtn.addEventListener('click', () => {
-    bookingFormdate.classList.toggle('form-active');
-    console.log(55)
-});
+const scroll = () => {
 
-bookingFormdateBtn.addEventListener('click', () => {
-    bookingFormdate.classList.toggle('form-active');
-});
+    let $page = $('html, body'); // для плавного скролла по якорям
+    $('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+    });
+
+};
+scroll();
