@@ -6,7 +6,6 @@ const bookingFormdateBtn = document.querySelector('.booking__form-date-btn'); //
 console.log(bookingFormdateBtn)
 bookingDateBtn.addEventListener('click', () => {
     bookingFormdate.classList.toggle('form-active');
-    console.log(55)
 });
 
 bookingFormdateBtn.addEventListener('click', () => {
@@ -16,7 +15,7 @@ bookingFormdateBtn.addEventListener('click', () => {
 
 const bookingPeopleBtn = document.querySelector('.booking__people-btn');// нашел кнопку люди
 const bookingFormnum = document.querySelector('.booking__formnum');
-console.log(bookingFormnum);
+
 bookingPeopleBtn.addEventListener('click', () => {
     bookingFormnum.classList.toggle('formnum-active');
 });
@@ -24,9 +23,7 @@ bookingPeopleBtn.addEventListener('click', () => {
 const bookingOptionsbtn = document.querySelector('.booking__options-btn'); // нашел саму кнопку опции
 const bookingFormoption = document.querySelector('.booking__formoption'); // карточка опции 
 const bookingFormoptionBtn = document.querySelector('.booking__formoption-btn'); // кнопка из опций
-console.log(bookingFormoption)
-console.log(bookingFormoptionBtn)
-console.log(bookingOptionsbtn)
+
 bookingOptionsbtn.addEventListener('click', () => {
     bookingFormoption.classList.toggle('opt-active');
 });

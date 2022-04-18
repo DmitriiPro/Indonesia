@@ -1,14 +1,14 @@
 .booking {
-	padding: 75px 0 75px 0;
+	padding: 75px 0 149px 0;
 
 	@media(max-width: 1024px) {
-		padding: 60px 0 60px 0;
+		padding: 60px 0 119px 0;
 	}
 	@media(max-width: 940px) {
-		padding: 45px 0 52px 0;
+		padding: 45px 0 102px 0;
 	}
 	@media(max-width: 380px) {
-		padding: 25px 0 25px 0;
+		padding: 25px 0 49px 0;
 	}
 
 	&__wrapper {
@@ -713,7 +713,7 @@
 
 	&__formdate-input {
 		appearance: none;
-		&:checked + &__formdate-label {
+		&:checked > &__form-date-label {
 			font-size: 16px;
 			color: $orange;
 		}

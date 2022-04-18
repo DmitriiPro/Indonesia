@@ -55,13 +55,13 @@
 
         <nav class="header__nav header__navigator">
           <ul class="header__list">
-            <li class="header__item"><a href="#" class="header__link">Индонезия</a></li>
-            <li class="header__item"><a href="#" class="header__link">Путешествие</a></li>
-            <li class="header__item"><a href="#" class="header__link">Тур 14 дней</a></li>
-            <li class="header__item"><a href="#" class="header__link">Почему мы?</a></li>
-            <li class="header__item"><a href="#" class="header__link">Фотоальбом</a></li>
-            <li class="header__item"><a href="#" class="header__link">Бронирование</a></li>
-            <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+            <li class="header__item"><a href="#present" class="header__link">Индонезия</a></li>
+            <li class="header__item"><a href="#info" class="header__link">Путешествие</a></li>
+            <li class="header__item"><a href="#tour" class="header__link">Тур 14 дней</a></li>
+            <li class="header__item"><a href="#why" class="header__link">Почему мы?</a></li>
+            <li class="header__item"><a href="#photo" class="header__link">Фотоальбом</a></li>
+            <li class="header__item"><a href="#booking" class="header__link">Бронирование</a></li>
+            <li class="header__item"><a href="#footer" class="header__link">Контакты</a></li>
           </ul>
         </nav>
 
@@ -84,7 +84,7 @@
   </header>
 
   <main>
-    <section class="present">
+    <section class="present" id="present">
       <div class="container">
 
         <div class="present__wrapper">
@@ -169,7 +169,7 @@
       </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
       <div class="container">
         <div class="info__wrapper">
 
@@ -229,7 +229,7 @@
       </div>
     </section>
 
-    <section class="tour">
+    <section class="tour" id="tour">
       <div class="container">
         <div class="tour__wrapper">
 
@@ -249,36 +249,6 @@
                 <p class="tour__date-text">Выбери дату 
                   путешествия</p>
                 <div class="tour__click" tabindex="0"></div>
-                  <!-- скрываю позиционирую-->
-                  <!-- <div class="tour__free-date"> 
-                    <h3 class="tour__free-date-title">Свободные даты</h3>
-
-                    <div class="tour__free-wrap">
-                    <div class="tour__free-month">
-                      <select name="month" class="tour__select-month">
-                        <option class="tour__select-month-value" >Ноябрь 2021</option>
-                        <option class="tour__select-month-value">Декабрь 2021</option>
-                        <option class="tour__select-month-value" >Январь 2022</option>
-                        <option class="tour__select-month-value" >Февраль 2022</option>
-                        <option class="tour__select-month-value" > Март 2022</option>
-                        <option class="tour__select-month-value" >Апрель 2022</option>
-                        <option class="tour__select-month-value">Май 2022</option>
-                      </select>
-                    </div>
-
-                    <div class="tour__free-number">
-                      <select name="date-number" class="tour__select-num">
-                        <option class="tour__select-num-value" >4.02 - 18.02</option>
-                        <option class="tour__select-num-value" >7.02 - 21.02</option>
-                        <option class="tour__select-num-value" >12.02 - 26.02</option>
-                        <option class="tour__select-num-value" >20.02 - 6.03</option>
-                      </select>
-                    </div>
-                  </div>
-
-                    <button class="tour__date-btn">Готово</button>
-                  </div> -->
-                  <!--скрываю позиционирую -->
 
               </fieldset> <!--первый блок дата-->
 
@@ -287,18 +257,6 @@
                 <p class="tour__date-text tour__people-text">Укажи количество 
                   человек</p>
                   <div class="tour__click-people" tabindex="0"></div>
-                  <!--скрываю позиционирую-->
-                  <!-- <div class="tour__people-block"> 
-                    <select name="people"  class="tour__people-select">
-                      <option class="tour__people-num-value" value="">1</option>
-                      <option class="tour__people-num-value" value="">2</option>
-                      <option class="tour__people-num-value" value="">3</option>
-                      <option class="tour__people-num-value" value="">4</option>
-                      <option class="tour__people-num-value" value="">5</option>
-                      <option class="tour__people-num-value" value="">6</option>
-                    </select>
-                  </div>  -->
-                  <!--скрываю позиционирую-->
               </fieldset> <!--второй блок люди-->
 
               <fieldset class="tour__options"> <!--третий блок опции-->
@@ -306,34 +264,6 @@
                 <p class="tour__date-text tour__options-text">Выбери нужные 
                   опции</p>
                 <div class="tour__click-options" tabindex="0"></div>
-
-                <!--скрываю позиционирую-->
-                <!-- <div class="tour__options-block"> 
-                  <h3 class="tour__options-title">Опции</h3>
-
-                  <ul class="tour__options-list">
-                    <li class="tour__options-item">
-                      <input class="tour__options-inp tour__options-inp-one" name="
-                      nanny" type="checkbox" id="l1">
-                      <label class="tour__options-l tour__options-l-one" for="l1">Няня</label>
-                    </li>
-                    <li class="tour__options-item">
-                      <input class="tour__options-inp tour__options-inp-two" name="menu" type="checkbox" id="l2">
-                      <label class="tour__options-l tour__options-l-two" for="l2">Персональное меню</label>
-                    </li>
-                    <li class="tour__options-item">
-                      <input class="tour__options-inp tour__options-inp-three" name="
-                      guide" type="checkbox" id="l3">
-                      <label class="tour__options-l tour__options-l-three" for="l3">Персональный гид</label>
-                    </li>
-                    <li class="tour__options-item">
-                      <input class="tour__options-inp tour__options-inp-four" name="tent" type="checkbox" id="l4">
-                      <label class="tour__options-l tour__options-l-four" for="l4">Улучшенная палатка</label>
-                    </li>
-                  </ul>
-                  <button class="tour__date-btn">Готово</button>
-                </div>  -->
-                <!--скрываю позиционирую-->
               </fieldset><!--третий блок опции-->
 
               <div class="tour__link-calc">
@@ -345,8 +275,8 @@
           </fieldset>
 
           <!-- <form method="post" action="https://jsonplaceholder.typicode.com/posts"> -->
-           <!-- скрываю позиционирую блок дата - начало-->
-           <div class="tour__free-date" > 
+          <!-- скрываю позиционирую блок дата - начало-->
+          <div class="tour__free-date" > 
             <h3 class="tour__free-date-title">Свободные даты</h3>
 
             <div class="tour__free-wrap">
@@ -376,8 +306,8 @@
           </div>
           <!--скрываю позиционирую блок дата - конец-->
 
-           <!--скрываю позиционирую блок люди - начало -->
-           <div class="tour__people-block"> 
+          <!--скрываю позиционирую блок люди - начало -->
+          <div class="tour__people-block"> 
             <select name="people"  class="tour__people-select" multiple>
               <option class="tour__people-num-value" value="">1</option>
               <option class="tour__people-num-value" value="">2</option>
@@ -421,7 +351,7 @@
       </div>
     </section>
 
-    <section class="why">
+    <section class="why" id="why">
       <div class="container">
         <div class="why__wrapper">
 
@@ -477,7 +407,7 @@
       </div>
     </section>
 
-    <section class="photo">
+    <section class="photo" id="photo">
       <div class="container">
         <div class="photo__wrapper">
 
@@ -531,7 +461,6 @@
                 </picture>
               </li>
             </ul>
-            <!-- <div class="swiper-pagination"></div> -->
 
             <button class="photo__btn photo__btn-left"></button>
 
@@ -543,7 +472,7 @@
     </div>
     </section>
 
-    <section class="booking">
+    <section class="booking" id="booking">
       <div class="container">
         <div class="booking__wrapper">
 
@@ -775,5 +704,101 @@
     </section>
 
   </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+        <div class="footer__wrapper-content">
+
+          <div class="footer__container-logo">
+            <picture>
+              <source srcset="img/footer-logo.avif" type="image/avif">
+              <source srcset="img/footer-logo.webp" type="image/webp">
+              <img src="img/footer-logo.png" alt="надпись indo travel" class="footer__logo" width="176" height="34">
+            </picture>
+          </div>
+
+          <div class="footer__container-info">
+
+            <nav class="footer__menu">
+              <h3 class="footer__menu-title">Меню</h3>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#present" class="footer__menu-link">Индонезия</a></li>
+                <li class="footer__menu-item"><a href="#info" class="footer__menu-link">Путешествие</a></li>
+                <li class="footer__menu-item"><a href="#tour" class="footer__menu-link">Тур 14 дней</a></li>
+                <li class="footer__menu-item"><a href="#why" class="footer__menu-link">Почему мы?</a></li>
+                <li class="footer__menu-item"><a href="#photo" class="footer__menu-link">Фотоальбом</a></li>
+                <li class="footer__menu-item"><a href="#booking" class="footer__menu-link">Бронирование</a></li>
+                <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <address class="footer__contacts">
+              <p class="footer__contacts-text">Контакты</p>
+              <p class="footer__contacts-link-p1"><a href="tel:+79378392361" class="footer__contacts-link">Тел: +7 937 839 23-61</a></p>
+              <p class="footer__contacts-link-p2"><a href="mailto:IndoTravel@gmail.com" class="footer__contacts-link-mail">Email: IndoTravel@gmail.com</a></p>
+
+              <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">
+                  <a href="https://www.whatsapp.com/" class="footer__contacts-links footer__contacts-links-whatsap" target="_blank">
+                    <img src="img/footer-whatsap.svg" alt="иконка" class="footer__contacts-links-img footer__contacts-links-img-whatsap" width="26" height="26">
+                  </a>
+                </li>
+                <li class="footer__contacts-item">
+                  <a href="https://www.instagram.com/" class="footer__contacts-links footer__contacts-links-inst"  target="_blank">
+                    <img src="img/footer-instagram.svg" alt="иконка" class="footer__contacts-links-img footer__contacts-links-img-inst" width="26" height="26">
+                  </a>
+                </li>
+                <li class="footer__contacts-item">
+                  <a href="https://www.youtube.com/" class="footer__contacts-links footer__contacts-links-youtube" target="_blank">
+                  <img src="img/footer-youtube.svg" alt="иконка"  class="footer__contacts-links-img footer__contacts-links-img-youtube" width="26" height="26">
+                  </a>
+                </li>
+                <li class="footer__contacts-item">
+                  <a href="https://ru-ru.facebook.com/" class="footer__contacts-links footer__contacts-links-facebook" target="_blank">
+                    <img src="img/footer-facebook.svg" alt="иконка"  class="footer__contacts-links-img footer__contacts-links-img-facebook" width="26" height="26">
+                  </a>
+                </li>
+                <li class="footer__contacts-item">
+                  <a href="https://web.telegram.org/" class="footer__contacts-links footer__contacts-links-telegram" target="_blank">
+                    <img src="img/footer-telegram.svg" alt="иконка"  class="footer__contacts-links-img footer__contacts-links-img-telegram" width="26" height="26">
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <form class="footer__form" method="post">
+              <h3 class="footer__form-title">Есть вопросы по туру?</h3>
+
+              <p class="footer__form-text">Введите свой Email и мы свяжемся с вами в течении 3 рабочих дней</p>
+
+              <fieldset class="footer__form-fieldset">
+                <input type="email" name="email" class="footer__form-input" placeholder="Введите адрес электронной почты">
+                <button class="footer__form-btn">
+                  <svg class="footer__form-svg" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 8.49992C0.75 8.79 0.865234 9.0682 1.07035 9.27332C1.27547 9.47843 1.55367 9.59367 1.84375 9.59367H14.5159L9.81937 14.288C9.71768 14.3897 9.63701 14.5105 9.58198 14.6433C9.52694 14.7762 9.49862 14.9186 9.49862 15.0624C9.49862 15.2062 9.52694 15.3486 9.58198 15.4815C9.63701 15.6144 9.71768 15.7351 9.81937 15.8368C9.92107 15.9385 10.0418 16.0191 10.1747 16.0742C10.3075 16.1292 10.4499 16.1575 10.5937 16.1575C10.7376 16.1575 10.88 16.1292 11.0128 16.0742C11.1457 16.0191 11.2664 15.9385 11.3681 15.8368L17.9306 9.27429C18.0325 9.17269 18.1133 9.05199 18.1684 8.91911C18.2236 8.78623 18.252 8.64378 18.252 8.49992C18.252 8.35605 18.2236 8.2136 18.1684 8.08072C18.1133 7.94784 18.0325 7.82714 17.9306 7.72554L11.3681 1.16304C11.1627 0.957665 10.8842 0.842285 10.5937 0.842285C10.3033 0.842285 10.0248 0.957665 9.81937 1.16304C9.614 1.36842 9.49862 1.64697 9.49862 1.93742C9.49862 2.22786 9.614 2.50642 9.81937 2.71179L14.5159 7.40617H1.84375C1.55367 7.40617 1.27547 7.5214 1.07035 7.72652C0.865234 7.93164 0.75 8.20984 0.75 8.49992Z" fill="white"/>
+                    </svg>
+                </button>
+              </fieldset>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="footer__block">
+          <p class="footer__block-paragraph">© Indo Travel, 2022</p>
+
+          <div class="footer__block-design">
+            <p class="footer__block-ilina">Design by Anastasia Ilina</p>
+            <a class="footer__block-ilina-link" href="mailto:@Mrshmallowww">Tg: @Mrshmallowww</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
