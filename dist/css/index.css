@@ -5218,6 +5218,7 @@ iframe {
   .photo__containers {
     width: 108.5%;
     left: -4.5%;
+    height: 144px;
   }
 
   .photo__img {
