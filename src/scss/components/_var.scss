@@ -4,47 +4,10 @@ $hover: #F3C858;
 $focus: #C2900F;
 $disabled: #AFAFAF;
 $active: #D09600;
-// $primaryLight: #FF922E;
-// $primaryDark: #AEAAAA;
-
-// $secondary: #EAEAEA;
-// $secondaryDark: #6B6B6B;
 
 $black: #303030;
 $white: #FFF;
 
-$tablet: 768px;
-$laptop: 1024px;
-$desktop: 1240px;
-
-@mixin tablet {
-  @media (min-width: #{$tablet}) {
-    @content;
-  }
-}
-
-@mixin laptop {
-  @media (min-width: #{$laptop}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
-}
-
-// @mixin font($name, $weight) {
-//   font: {
-//     family: $name;
-//     weight: $weight;
-//     display: swap;
-//     style: normal;
-//   }
-//   src: url("../fonts/#{ $name }-#{ $weight }.woff2")  format("woff2"),
-//     url("../fonts/#{ $name }-#{ $weight }.woff")  format("woff"),
-// }
 
 %backgImg {
 	background-repeat: no-repeat;
@@ -52,31 +15,3 @@ $desktop: 1240px;
 	background-size: cover;
 }
 
-@mixin font-face($font-family, $file-path, $weight: normal) {
-	@font-face {
-		font: {
-			family: $font-family;
-			weight: $weight;
-			style: normal;
-			display: swap;
-		}
-		src: url('#{$file-path}.woff2') format("woff2"),
-		url('#{$file-path}.woff') format("woff");
-		
-	}
-}
-
-
-// @mixin bg-avif-webp($url, $type) {
-
-//   background: {
-//       image: -webkit-image-set(
-//           url("#{$url}.avif") 1x,    
-//           url("#{$url}.webp") 1x
-//       );
-//       image: image-set(
-//           url("#{$url}.avif") 1x,    
-//           url("#{$url}.webp") 1x
-//       );
-//   };
-// }

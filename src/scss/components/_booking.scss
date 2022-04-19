@@ -11,10 +11,6 @@
 		padding: 25px 0 49px 0;
 	}
 
-	&__wrapper {
-		
-	}
-
 	&__form {
 		position: relative;
 		border: 1px solid $disabled;
@@ -89,8 +85,6 @@
 		justify-content: space-between;
 		margin-bottom: 30px;
 		@media(max-width: 940px) {
-			// justify-content: unset;
-			// gap: 60px;
 			margin-bottom: 24px;
 		}
 
@@ -122,15 +116,7 @@
 		position: relative;
 		transition: all 0.250s ease;
 		outline: none;
-		// &:hover {
-		// 	border: 1px solid $orange;
-		// }
-		// &:focus {
-		// 	outline: 1px solid $focus;
-		// }
-		// &:active {
-		// 	outline: 1px solid $orange;
-		// }
+		
 		@media(max-width: 940px) {
 			width: 170px;
 			border-radius: 8px;
@@ -184,7 +170,6 @@
 	&__button {
 		border: transparent;
 		background: transparent;
-		// position: relative;
 		outline: none;
 		transition: all 0.250s ease;
 		&:after {
@@ -201,11 +186,7 @@
 				top: 20px;
     			right: 17px;
 			}
-			// &:hover {
-				
-			// 	border-bottom: 2px solid $orange;
-			// 	border-right: 2px solid $orange;
-			// }
+			
 		}
 		&:hover {
 			&:after {
@@ -224,23 +205,14 @@
 			span {
 				color: $orange;
 			}
-			// color: $orange;
+			
 			&:after {
 				border-bottom: 2px solid $orange;
 				border-right: 2px solid $orange;
 			}
 
 		}
-		// &:before {
-		// 	content: '';
-		// 	width: 22px;
-		// 	height: 22px;
-		// 	background-color: green;
-		// 	position: absolute;
-		// 	top: 29px;
-		// 	right: 14px;
-		// 	border-radius: 50%;
-		// }
+	
 	}
 
 	&__span {
@@ -273,7 +245,6 @@
 		line-height: 130%;
 		color: $disabled;
 		opacity: 0.7;
-		// max-width: 140px;
 		text-align: start;
 		padding-top: 10px;
 		padding-left: 8px;
@@ -545,10 +516,6 @@
 			margin: 0 auto;
 		}
 	}
-	// карточка с датой и временем открывается
-	// &__form-active {
-	// 	display: block;
-	// }
 
 	&__form-list-month {
 		position: relative;
@@ -694,7 +661,6 @@
 		cursor: pointer;
 		transition: all 0.250s ease;
 		&:hover{
-			// color: $orange;
 			font-size: 16px;
 		}
 		&:focus {
@@ -704,11 +670,7 @@
 			font-size: 16px;
 			color: $orange;
 		}
-		// &:checked + &-label {
-		// 	font-size: 16px;
-		// 	color: $orange;
-		// }
-
+		
 	}
 
 	&__formdate-input {
@@ -760,19 +722,12 @@
 				font-size: 18px;
 				color: $orange;
 			}
-			// &:checked {
-			// 	font-size: 18px;
-			// 	color: $orange;
-			// }
+		
 		}
 
 		&-input {
 			appearance: none;
-			// cursor: pointer;
-			// &:checked + .booking__formnum-label {
-			// 	font-size: 18px;
-			// 	color: $orange;
-			// }
+		
 		}
 		
 	} 
@@ -838,7 +793,6 @@
 		&-input {
 			width: 16px;
 			height: 16px;
-			// background: $white;
 			margin-right: 10px;
 			vertical-align: sub;
 			cursor: pointer;
@@ -849,9 +803,7 @@
 			&:focus {
 				outline: 1px solid $orange;
 			}
-			// &:checked +  .booking__formoption-label {
-			// 	color: $orange;
-			// }
+		
 		}
 
 		&-label {
@@ -887,9 +839,7 @@
 			}
 		}
 	}
-	// &__formoption-item:checked + .booking__formoption-label {
-	// 	background-color: orange;
-	// }
+
 }
 
 .form-active {

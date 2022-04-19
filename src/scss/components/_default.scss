@@ -19,7 +19,6 @@ body {
   font-style: normal;
   color: $black; /*цвет под ваш проект*/
   background-color: $white; /*цвет под ваш проект*/
-  // background-image: url(../img/sprite.svg#fire);
 
 }
 
@@ -90,20 +89,3 @@ iframe {
   }
 }
 
-// @include tablet {
-//   body {
-//     background-color: red;
-//   }
-// }
-
-// @include laptop {
-//   body {
-//     background-color: green;
-//   }
-// }
-
-// @include desktop {
-//   body {
-//     background-color: blue;
-//   }
-// }

@@ -26,7 +26,7 @@ tourDateBtn.addEventListener('click', () => {
 });
 
 const tourDateBtnClick = document.querySelector('.tour__date-btn-click'); // нашел кнопку из окна опции
-console.log(tourDateBtnClick)
+
 tourDateBtnClick.addEventListener('click', () => {
 	tourOptionsBlock.classList.toggle('click-options');
 });

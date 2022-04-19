@@ -10,9 +10,8 @@
 		url('../img/header__background.webp') 1x,
 		url('../img/header__background.jpg') 1x
 	);
-	// @extend %backgImg;
+	
 	background-repeat: no-repeat;
-	// background-position: center;
 	background-position: top;
 	background-size: cover;
 
@@ -71,8 +70,24 @@
 	&__burger {
 		background-color: transparent;
 		border: transparent;
+		color: $white;
+		transition: all 0.300s ease;
 		@media(max-width: 768px) {
 			align-self: start;
+		}
+		
+		&-svg {
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: $hover;
+		}
+		&:focus {
+			color: $hover;
+		}
+		&:active {
+			color: $active;
 		}
 	}
 	&__subtitle {
@@ -103,7 +118,6 @@
 		font-weight: 200;
 		font-size: 200px;
 		line-height: 200px;
-		// text-align: center;
 		text-transform: uppercase;
 		color: $white;
 		margin-bottom: 12px;
@@ -187,11 +201,19 @@
 		font-size: 18px;
 		line-height: 150%;
 		color: $white;
+		transition: all 0.250s ease;
 		@media(max-width: 920px) {
 			font-size: 14px;
 		}
 		@media(max-width: 340px) {
 			font-size: 12px;
+		}
+		
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			text-decoration: none;
 		}
 	}
 	&__link-bron {
@@ -208,6 +230,18 @@
 		border-radius: 12px;
 		margin-left: auto;
 		margin-right: 9px;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:focus {
+			background-color: $hover;
+			outline: 2px solid $focus;
+		}
+		&:active {
+			background-color: $active;
+		}
+
 		@media(max-width: 1024px) {
 			padding: 18px 81px;
 			width: 299px;
@@ -234,18 +268,15 @@
 	&__wrapper-two {
 		padding: 17px 0 90px 61px;
 		@media(max-width: 1024px) {
-			// padding: 17px 0 24px 73px;
 			padding: 10px 0 24px 86px;
 		}
 		@media(max-width: 920px) {
-			// padding: 12px 0 21px 85px;
 			padding: 0 0 21px 103px;
 		}
 		@media(max-width: 660px) {
 			padding: 12px 0 21px 0;
 		}
 		@media(max-width: 340px) {
-			// padding: 16px 0 16px 0;
 			padding: 9px 0 16px 9px;
 		}
 	}

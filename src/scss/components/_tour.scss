@@ -52,7 +52,6 @@
 		}
 	}
 	&__title {
-		// font-family: 'Nunito';
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 150%;
@@ -115,7 +114,6 @@
 		backdrop-filter: blur(10px);
 		border-radius: 30px 30px 0px 0px;
 		padding: 68px 60px;
-		// border: transparent;
 		@media(max-width: 1130px) {
 			padding: 50px 60px;
 			border-radius: 20px 20px 0px 0px;
@@ -135,7 +133,6 @@
 	&__wrapper-calc {
 		background: rgba(33, 25, 25, 0.78);
 		border-radius: 20px;
-		// border: transparent;
 		padding: 23px 34px 20px 38px;
 		display: flex;
 		justify-content: space-between;
@@ -217,20 +214,12 @@
 		}
 	}
 	&__click {
-		// position: relative;
-
 		position: absolute;
 		bottom: 34px;
 		right: 21px;
-		// background-color: $white;
-		// width: 20px;
-		// height: 20px;
 		border-radius: 50%;
-
 		cursor: pointer;
 		display: block;
-		// width: 22px;
-		// height: 22px;
 		transition: all 0.250s ease;
 		outline: 0;
 		@media(max-width: 980px) {
@@ -248,7 +237,7 @@
 		}
 
 		&:focus {
-			// background-color: transparent;
+			
 			&:after {
 				border-bottom: 2px solid $orange;
 				border-right: 2px solid $orange;
@@ -280,16 +269,6 @@
 			position: absolute;
 			right: 7px;
 			bottom: 8px;
-			// transition: all 0.250s ease;
-			// &:hover {
-			// 	border-bottom: 2px solid $orange;
-			// 	border-right: 2px solid $orange;
-			// }
-			// &:focus {
-			// 	// background-color: none;
-			// 	border-bottom: 2px solid $orange;
-			// 	border-right: 2px solid $orange;
-			// }
 		}
 		
 	}
@@ -343,7 +322,6 @@
 		font-size: 14px;
 		line-height: 130%;
 		color: $grey;
-		// outline: 1px solid $focus;
 		@media(max-width: 630px) {
 			font-size: 12px;
 		}
@@ -366,12 +344,7 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 130%;
-		// outline: 1px solid $focus;
-		// &:hover {
-		// 	// color: $orange;
-		// 	// background: $white;
-		// 	// font-size: 18px;
-		// }
+		
 		@media(max-width: 630px) {
 			font-size: 12px;
 		}
@@ -383,10 +356,7 @@
 		&:not(:last-child) {
 			margin-bottom: 25px;
 		}
-		// &:active {
-		// 	color: $orange;
-		// background: $white;
-		// }
+		
 		@media(max-width: 630px) {
 			font-size: 12px;
 		}
@@ -404,6 +374,18 @@
 		height: 38px;
 		border-radius: 8px;
 		margin-left: auto;
+		transition: all 0.300s ease;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:focus {
+			background-color: $hover;
+			outline: 2px solid $focus;
+		}
+		&:active {
+			background-color: $active;
+		}
 		@media(max-width: 630px) {
 			font-size: 12px;
 			padding: 8px 24px;
@@ -446,7 +428,6 @@
 		} 
 		@media(max-width: 990px) {
 			bottom: 253px;
-			// left: 554px;
 			left: 450px;
 		}
 		@media(max-width: 630px) {
@@ -480,7 +461,7 @@
 		}
 
 		&:focus {
-			// background-color: transparent;
+			
 			&:after {
 				border-bottom: 2px solid $orange;
 				border-right: 2px solid $orange;
@@ -575,7 +556,6 @@
 		}
 	}
 	&__click-options {
-		// position: relative;
 		position: absolute;
 		bottom: 34px;
 		right: 22px;
@@ -602,7 +582,7 @@
 		}
 
 		&:focus {
-			// background-color: transparent;
+			
 			&:after {
 				border-bottom: 2px solid $orange;
 				border-right: 2px solid $orange;
@@ -659,10 +639,7 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 130%;
-		// &:active {
-		// 	border: 1px solid #FCB500;
-		// 	color: $orange;
-		// }
+	
 		@media(max-width: 990px) {
 			font-size: 12px;
 		}
@@ -675,14 +652,7 @@
 		margin-right: 15px;
 		vertical-align: middle;
 		transition: all 0.250s ease;
-		// &:hover {
-		// 	border: 1px solid #FCB500;
-		// 	color: $orange;
-		// }
-		// &:active {
-		// 	border: 1px solid #FCB500;
-		// 	color: $orange;
-		// }
+		
 		@media(max-width: 990px) {
 			margin-right: 5px;
 		}
@@ -694,7 +664,6 @@
 	}
 
 
-	//////////////////////////
 	&__link-calc {
 		@media(max-width: 980px) {
 			margin-bottom: 9px;
@@ -715,6 +684,18 @@
 		height: 67px;
 		display: inline-block;
 		border-radius: 12px;
+		transition: all 0.300s ease;
+
+		&:hover {
+			background-color: $hover;
+		}
+		&:focus {
+			background-color: $hover;
+			outline: 2px solid $focus;
+		}
+		&:active {
+			background-color: $active;
+		}
 		@media(max-width: 1130px) {
 			padding: 13px 41px 16px 41px;
 			width: 189px;

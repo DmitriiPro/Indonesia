@@ -3,7 +3,7 @@
 const bookingDateBtn = document.querySelector('.booking__date-btn'); // нашел кнопку дата
 const bookingFormdate = document.querySelector('.booking__form-date'); // нашел сам блок с месяцем и датой позиционируем
 const bookingFormdateBtn = document.querySelector('.booking__form-date-btn'); // нашел саму кнопку что в форме с датой и месяц
-console.log(bookingFormdateBtn)
+
 bookingDateBtn.addEventListener('click', () => {
     bookingFormdate.classList.toggle('form-active');
 });
