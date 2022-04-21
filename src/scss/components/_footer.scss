@@ -354,6 +354,11 @@
 			background-color: transparent;
 			padding: 18px 35px 0px 0;
 			width: 300px;
+			outline: none;
+
+			&:active {
+				outline: 1px solid $orange;
+			}
 
 			@media(max-width: 1150px) {
 				padding: 11px 35px 0 0;

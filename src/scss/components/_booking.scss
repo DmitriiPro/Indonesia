@@ -155,15 +155,11 @@
 	}
 
 	&__input {
+		outline: none;
 		transition: all 0.250s ease;
-		&:hover {
-			border: 1px solid $orange;
-		}
-		&:focus {
-			outline: 1px solid $focus;
-		}
+		
 		&:active {
-			outline: 1px solid $orange;
+			// outline: 1px solid $orange;
 		}
 	}
 

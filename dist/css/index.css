@@ -2484,21 +2484,10 @@ iframe {
 }
 
 .booking__input {
+  outline: none;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-}
-
-.booking__input:hover {
-  border: 1px solid #FCB500;
-}
-
-.booking__input:focus {
-  outline: 1px solid #C2900F;
-}
-
-.booking__input:active {
-  outline: 1px solid #FCB500;
 }
 
 .booking__button {
@@ -3213,6 +3202,11 @@ iframe {
   background-color: transparent;
   padding: 18px 35px 0px 0;
   width: 300px;
+  outline: none;
+}
+
+.footer__form-input:active {
+  outline: 1px solid #FCB500;
 }
 
 .footer__form-btn {
