@@ -355,9 +355,10 @@
 			padding: 18px 35px 0px 0;
 			width: 300px;
 			outline: none;
+			cursor: pointer;
 
-			&:active {
-				outline: 1px solid $orange;
+			&:focus {
+				outline: 1px solid $focus;
 			}
 
 			@media(max-width: 1150px) {

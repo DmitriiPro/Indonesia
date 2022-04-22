@@ -2488,6 +2488,7 @@ iframe {
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .booking__button {
@@ -3203,10 +3204,11 @@ iframe {
   padding: 18px 35px 0px 0;
   width: 300px;
   outline: none;
+  cursor: pointer;
 }
 
-.footer__form-input:active {
-  outline: 1px solid #FCB500;
+.footer__form-input:focus {
+  outline: 1px solid #C2900F;
 }
 
 .footer__form-btn {

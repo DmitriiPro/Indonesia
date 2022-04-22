@@ -157,10 +157,11 @@
 	&__input {
 		outline: none;
 		transition: all 0.250s ease;
+		cursor: pointer;
 		
-		&:active {
-			// outline: 1px solid $orange;
-		}
+		// &:focus {
+		// 	outline: 1px solid $focus;
+		// }
 	}
 
 	&__button {
